@@ -2,6 +2,8 @@
 
 A modern, responsive developer portfolio built with React and Vite.
 
+![Portfolio Preview](public/portfolio-preview.png)
+
 ## Features
 
 - **Modern UI**: Glassmorphism design with dark/light/sepia themes.
