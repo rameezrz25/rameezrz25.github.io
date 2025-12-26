@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { FaCode } from 'react-icons/fa';
+import { FaCode, FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +20,9 @@ const Header = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Education', href: '#education' },
     { name: 'Achievements', href: '#achievements' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Open Source', href: '#opensource' },
+    { name: 'Lifestyle', href: '#lifestyle' },
   ];
 
   const scrollToSection = (e, id) => {
@@ -56,30 +60,27 @@ const Header = () => {
               {link.name}
             </a>
           ))}
-          <a
-            href="#projects"
-            className="btn btn-primary btn-sm"
-            onClick={(e) => scrollToSection(e, '#projects')}
-          >
-            Projects
-          </a>
-          <a
-            href="#opensource"
-            className="btn btn-primary btn-sm"
-            style={{ marginLeft: '0.5rem' }}
-            onClick={(e) => scrollToSection(e, '#opensource')}
-          >
-            Open Source
-          </a>
-          <a
-            href="#lifestyle"
-            className="btn btn-primary btn-sm"
-            style={{ marginLeft: '0.5rem' }}
-            onClick={(e) => scrollToSection(e, '#lifestyle')}
-          >
-            Lifestyle
-          </a>
         </nav>
+
+        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
+
+        <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="mobile-nav-link"
+              onClick={(e) => {
+                scrollToSection(e, link.href);
+                setMenuOpen(false);
+              }}
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
       </div>
 
       <style>{`
@@ -150,9 +151,58 @@ const Header = () => {
           width: 100%;
         }
 
-        .btn-sm {
-          padding: 0.5rem 1.5rem;
-          font-size: 0.9rem;
+      `}</style>
+      <style>{`
+        .menu-toggle {
+          display: none;
+          background: none;
+          border: none;
+          color: var(--text-primary);
+          font-size: 1.5rem;
+          cursor: pointer;
+          z-index: 1001;
+        }
+
+        .mobile-menu {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background: var(--bg-primary);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+          z-index: 1000;
+          transform: translateX(100%);
+          transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-menu.open {
+          transform: translateX(0);
+        }
+
+        .mobile-nav-link {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: var(--text-primary);
+          transition: color 0.3s ease;
+        }
+
+        .mobile-nav-link:hover {
+          color: var(--accent-primary);
+        }
+
+        @media (max-width: 768px) {
+          .nav-desktop {
+            display: none;
+          }
+
+          .menu-toggle {
+            display: block;
+          }
         }
       `}</style>
     </header>
