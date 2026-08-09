@@ -21,8 +21,6 @@ const Header = () => {
     { name: 'Education', href: '#education' },
     { name: 'Achievements', href: '#achievements' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Open Source', href: '#opensource' },
-    { name: 'Lifestyle', href: '#lifestyle' },
   ];
 
   const scrollToSection = (e, id) => {

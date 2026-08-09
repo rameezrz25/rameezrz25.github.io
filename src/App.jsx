@@ -7,8 +7,6 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Achievements from './components/Achievements';
 import Projects from './components/Projects';
-import OpenSource from './components/OpenSource';
-import Lifestyle from './components/Lifestyle';
 import Footer from './components/Footer';
 import ThemeSwitcher from './components/ThemeSwitcher';
 import './styles/index.css';
@@ -23,8 +21,6 @@ function MainPortfolio() {
       <Education />
       <Achievements />
       <Projects />
-      <OpenSource />
-      <Lifestyle />
     </main>
   );
 }

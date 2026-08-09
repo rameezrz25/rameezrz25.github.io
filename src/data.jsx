@@ -93,78 +93,46 @@ export const achievements = [
 
 export const projects = [
   {
-    title: "Awesome Project 1",
-    description: "A high-performance distributed system optimized for low-latency data processing. Built with modern C++ and stylized with Python bindings.",
-    tags: ["C++", "Python", "Distributed Systems"],
+    title: "financial-compass",
+    description: "Privacy-first, local-first CLI that simulates \"if my income stops tomorrow\": runway, salary thresholds, and a calm month-by-month action plan. No bank credentials, no cloud APIs.",
+    tags: ["Python", "CLI", "Personal Finance"],
     links: {
-      github: "https://github.com/rameezrz25/project-1",
-      pypi: "https://pypi.org/project/dummy-project-1"
+      github: "https://github.com/rameezrz25/financial-compass",
+      pypi: "https://pypi.org/project/financial-compass/"
     }
   },
   {
-    title: "EcoTracker AI",
-    description: "Machine learning model for estimating carbon footprint based on daily activity logs. Features a React dashboard for visualization.",
-    tags: ["Python", "TensorFlow", "React", "AWS"],
+    title: "rsu-to-swp",
+    description: "CLI that turns RSU/ESPP broker exports into a real after-tax holdings picture, then simulates a systematic withdrawal plan (SWP).",
+    tags: ["Python", "CLI", "RSU"],
     links: {
-      github: "https://github.com/rameezrz25/project-2",
-      pypi: "https://pypi.org/project/dummy-project-2"
+      github: "https://github.com/rameezrz25/rsu-to-swp",
+      pypi: "https://pypi.org/project/rsu-to-swp/"
     }
   },
   {
-    title: "Thermal Monitor Pro",
-    description: "Cross-platform desktop application for real-time CPU/GPU thermal monitoring. Interfaces with low-level hardware sensors.",
-    tags: ["Rust", "Electron", "Windows API"],
+    title: "mcp-sysinfo",
+    description: "AI-powered hardware & system benchmarking tool for your local machine, built on the Model Context Protocol (MCP) with the Gemini API.",
+    tags: ["Python", "MCP", "Gemini API"],
     links: {
-      github: "https://github.com/rameezrz25/project-3",
-      pypi: "https://pypi.org/project/dummy-project-3"
+      github: "https://github.com/rameezrz25/mcp-sysinfo"
     }
-  }
-];
-
-export const openSource = [
-  {
-    repo: "facebook/react",
-    role: "Contributor",
-    description: "Fixed a critical bug in the reconciliation algorithm causing memory leaks in large-scale applications.",
-    prLink: "https://github.com/facebook/react/pull/12345"
   },
   {
-    repo: "vercel/vite",
-    role: "Contributor",
-    description: "Improved build performance by optimizing the dependency pre-bundling process.",
-    prLink: "https://github.com/vercel/vite/pull/67890"
+    title: "SysBenchInfo",
+    description: "Python package providing detailed CPU/GPU/memory/OS system info, plus basic CPU and GPU benchmarks.",
+    tags: ["Python", "System Info", "Benchmarking"],
+    links: {
+      github: "https://github.com/rameezrz25/SysBenchInfo",
+      pypi: "https://pypi.org/project/sysbenchinfo/"
+    }
   },
   {
-    repo: "tensorflow/tensorflow",
-    role: "Documentation",
-    description: "Updated conflicting documentation regarding TensorBoard integration for custom models.",
-    prLink: "https://github.com/tensorflow/tensorflow/pull/11223"
-  }
-];
-
-export const lifestyle = [
-  {
-    title: "Hiking in the Himalayas",
-    category: "Travel",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3",
-    description: "Trekking through the serene landscapes of Himachal Pradesh, experiencing the raw beauty of nature at 10,000 ft."
-  },
-  {
-    title: "Street Food in Bangkok",
-    category: "Food",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=3270&ixlib=rb-4.0.3",
-    description: "Exploring the vibrant night markets and tasting authentic Pad Thai and Mango Sticky Rice."
-  },
-  {
-    title: "Kyoto Cherry Blossoms",
-    category: "Travel",
-    image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3",
-    description: "Witnessing the magical Sakura season in Japan, a blend of tradition, color, and peace."
-  },
-  {
-    title: "Italian Pizza Making",
-    category: "Food",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3",
-    description: "Learning the art of authentic Neapolitan pizza making in the heart of Naples."
+    title: "sysbench",
+    description: "Cross-platform system benchmarking web app (CPU/Memory/Disk/GPU) with a FastAPI backend and a React + Tailwind CSS frontend.",
+    tags: ["Python", "FastAPI", "React"],
+    links: {
+      github: "https://github.com/rameezrz25/sysbench"
+    }
   }
 ];
