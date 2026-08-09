@@ -38,17 +38,18 @@ export const experience = [
     duration: "August 2020 – Present",
     location: "Bangalore, Karnataka",
     description: [
-      "Developed and optimized system software Intel Dynamic Tuning Technology for Intel platforms, enhancing thermal management, system performance, and power efficiency.",
-      "Improved CPU–GPU power and thermal balancing across diverse workloads (Cinebench, Geekbench, 3DMark, FurMark) and gaming benchmarks, boosting platform efficiency.",
-      "Enhanced Intel SoC performance on Google ChromeOS by tuning configurations, reducing power consumption and improving benchmark scores.",
-      "Automated system optimization workflows by integrating Intel DTT using benchmarking tools and Games (Metro Exodus, Cyberpunk 2077, Shadow of the Tomb Raider), reducing manual effort by 80%.",
-      "Created an OS-independent thermal monitoring tool with advanced visualization to track system thermals on Linux and Windows platforms.",
+      "Architected an AI-assisted, event-driven hardware simulation SDK for OEMs and customers, emulating platform telemetry (Wi-Fi, power, thermal, SoC) with fault/noise injection to enable pre-silicon development, automated validation, and edge-case coverage without physical hardware.",
+      "Developed and optimized system software for Intel platforms, improving thermal management, system performance, and power efficiency across multiple OEM platform configurations.",
+      "Automated long-duration test workflows for Intel DTT using benchmarks and games (Metro Exodus, Cyberpunk 2077, Shadow of the Tomb Raider), cutting manual test effort by 80%.",
       "Built an AI-powered predictive tool leveraging machine learning algorithms to estimate system parameters with 75% accuracy, enabling intelligent workload and thermal optimization.",
-      "Developed a proof-of-concept (PoC) to enable I3C read/write operations using Microsoft-provided I3C driver on Windows OS with SuperMITT test tool, validating I3C protocol functionality.",
-      "Built APIs bridging low-level hardware controls with user-facing software services, improving accessibility and usability of system features.",
-      "Worked with OEMs and ODMs to implement system-level optimizations, improving efficiency and performance.",
-      "Developed software installers using WiX Toolset, ensuring reliable deployment of drivers and applications.",
-      "Contributed to open-source projects by resolving security vulnerabilities and improving system stability."
+      "Built an RFIM optimization algorithm using RSSI, SNR, and priority-based scoring to select optimal RF channels, improving wireless validation reliability across Intel client platforms.",
+      "Automated DDR RF Interference Mitigation (RFIM) validation workflows using AI-assisted development, optimizing RF test execution, improving hardware utilization, and reducing validation infrastructure costs.",
+      "Stress-tested CPU–GPU power and thermal balancing across sustained and gaming workloads (Cinebench, Geekbench, 3DMark, FurMark), root-causing regressions and improving platform efficiency.",
+      "Improved Intel SoC performance and stability on Google ChromeOS through configuration tuning and cross-OS validation, reducing power consumption and improving benchmark scores.",
+      "Created an OS-independent thermal monitoring and logging tool with advanced visualization to track system telemetry on Linux and Windows platforms, accelerating debug and root-cause analysis.",
+      "Built APIs bridging low-level hardware controls with user-facing software services, improving accessibility, usability, and testability of system features.",
+      "Built installers with WiX Toolset for reliable driver and application deployment across production systems.",
+      "Contributed to open-source projects, resolving security vulnerabilities to improve system stability."
     ]
   },
   {
@@ -68,7 +69,8 @@ export const experience = [
 
 export const skills = {
   Languages: ["C", "Embedded C", "C++", "Python"],
-  Technologies: ["Git", "Docker", "Jenkins", "Jira", "GitHub Copilot", "WiX Toolset", "VS Code", "Visual Studio", "Jupyter Notebook"],
+  Technologies: ["Git", "Docker", "Jenkins", "Jira", "WiX Toolset", "VS Code", "Visual Studio", "Jupyter Notebook"],
+  "GenAI & AI Development": ["GitHub Copilot", "ChatGPT", "Claude", "Cursor", "Ollama", "LangChain", "OpenAI API"],
   Platforms: ["Ubuntu/Linux", "Windows", "ChromeOS"]
 };
 
